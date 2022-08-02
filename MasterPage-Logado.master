@@ -1,0 +1,553 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage-Logado.master.cs" Inherits="MasterPage_Logado" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Monitore | Monitorar para avaliar</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sistema web para monitoramento do andamento de grupos acadêmicos" />
+    <meta name="author" content="Monitore" />
+    <link rel="icon" href="img/logotipo/icone.png" type="image/x-icon" />
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/css/freelancer.min.css" rel="stylesheet" />
+    <link href="/css/grupo.css" rel="stylesheet" />
+    <link href="/css/tbl-index-logado.css" rel="stylesheet" />
+    <link href="css/responsividadeLogado.css" rel="stylesheet" />
+    <link href="/css/popup.css" rel="stylesheet" />
+    <link href="Content/bootstrap-select.min.css" rel="stylesheet" />
+
+    <script src="/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/sweetalert/sweetalert.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.data').mask('00/00/0000');
+            $('.cpf').mask('000.000.000-00');
+
+            document.getElementById('txtDataPerfil').style.display = "none";
+
+            /* BOTÃO VOLTAR AO TOPO */
+
+            jQuery("#subirTopo").hide();
+
+            jQuery('a#subirTopo').click(function () {
+                jQuery('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 400) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+
+        });
+
+        /* PERFIL */
+
+        function abrirPerfil() {
+            document.getElementById('perfil').style.display = 'block';
+        }
+
+        function fecharPerfil() {
+            document.getElementById('txtNomePerfil').disabled = true;
+            document.getElementById('ddlSexoPerfil').disabled = true;
+            document.getElementById('txtEmailPerfil').disabled = true;
+            document.getElementById('txtUsernamePerfil').disabled = true;
+            document.getElementById('txtCPFPerfil').disabled = true;
+            document.getElementById('btnOkPerfil').disabled = true;
+            document.getElementById('btnAlterarDados').disabled = false;
+            document.getElementById('txtDataPerfilExibicao').style.display = "block";
+            document.getElementById('txtDataPerfil').style.display = "none";
+            document.getElementById('perfil').style.display = 'none';
+            window.location.reload();
+        }
+
+        /* ALTERAR SENHA */
+        function abrirAlterarSenha() {
+            document.getElementById('alterarSenha').style.display = 'block';
+        }
+        function fecharAlterarSenha() {
+            document.getElementById('alterarSenha').style.display = 'none';
+        }
+
+        /* CONTATO USUARIO */
+
+        function abrirContato() {
+            document.getElementById('contatoUser').style.display = 'block';
+        }
+        function fecharContato() {
+            document.getElementById('contatoUser').style.display = 'none';
+        }
+
+        function alterarDados() {
+            document.getElementById('txtNomePerfil').disabled = false;
+            document.getElementById('ddlSexoPerfil').disabled = false;
+            document.getElementById('txtEmailPerfil').disabled = false;
+            document.getElementById('txtCPFPerfil').disabled = false;
+            document.getElementById('btnOkPerfil').disabled = false;
+            document.getElementById('txtUsernamePerfil').disabled = false;
+            document.getElementById('txtDataPerfilExibicao').style.display = "none";
+            document.getElementById('txtDataPerfil').style.display = "block";
+            document.getElementById('btnAlterarDados').disabled = true;
+
+            var txtDataExi = document.getElementById('txtDataPerfilExibicao');
+            var txtData = document.getElementById('txtDataPerfil');
+            var txtNome = document.getElementById('txtNomePerfil');
+
+            //Formatar data pega para padrão date
+            var dataDoTxt = document.getElementById('txtDataPerfilExibicao').value;
+            var dia = dataDoTxt.substring(0, 2);
+            var mes = dataDoTxt.substring(5, 3);
+            var ano = dataDoTxt.substring(10, 6);
+            var dataFinal = ano + "-" + mes + '-' + dia; //data que irá para o value do txtData
+
+            txtData.value = dataFinal;
+        }
+
+        function fecharConfirmacaoPerfil() {
+            document.getElementById('confirmacaoPerfil').style.display = 'none';
+        }
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top">
+    <a id="subirTopo">subir
+    </a>
+
+    <form id="form1" runat="server">
+
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+            <div class="container">
+
+                <a class="navbar-brand js-scroll-trigger" href="index-Logado.aspx">
+                    <img src="/img/logotipo/logotipo2.png" id="home" width="180" height="50" alt="Home" />
+                </a>
+
+                <a class="navbar-brand js-scroll-trigger" href="index-Logado.aspx">
+                    <img src="/img/icones/icone-logo.png" id="homeMini" alt="Home" />
+                </a>
+
+                <button class="navbar-toggler navbar-toggler-right text-uppercase btn rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                    style='background-color: #FFFF00; color: #000;float:left;'>
+                    Menu
+         
+                <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <asp:Button ID="btnAbrirPerfil" runat="server" Text="" OnClick="btnAbrirPerfil_Click"
+                                CssClass="colorNomeUsuario botaoUsername nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                Style="background-color: #000; border-color: #000; letter-spacing: .0625rem; font-family: Candara; text-transform: uppercase; font-weight: bold; cursor: pointer; font-size: 15px;" />
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="javascript: abrirContato();">Contato</a>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogout_Click" CssClass="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Logout</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+
+                    <!-- LINKS -->
+
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Links</h4>
+                        <p>
+                            <a class="lead mb-0" href="/paginas/ajuda-Logado.aspx">Ajuda</a>
+                        </p>
+
+                        <br />
+
+                        <a href='https://app.umbler.com/u/ne16l76k'>
+                            <img src='https://static.umbler.com/brand/umbler-badges/umbler-badge-hostedby-light-bg.png'
+                                width='40%' alt='Hosted by Umbler'>
+                        </a>
+                    </div>
+
+                    <!-- REDES SOCIAIS -->
+
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Redes sociais</h4>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/monitoreweb/">
+                                    <i class="fa fa-fw fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/monitoreweb/">
+                                    <i class="fa fa-fw fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/monitoreweb">
+                                    <i class="fa fa-fw fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SOBRE NÓS -->
+
+                    <div class="col-md-4">
+                        <h4 class="text-uppercase mb-4">Sobre nós</h4>
+                        <p class="lead mb-0">
+                            Sistema web produzido por alunos da FATEC Guaratinguetá.
+                        </p>
+                        <br />
+                        <h6>Douglas Kurotaki </h6>
+                        <h6>Luiz Fellipe</h6>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>Copyright &copy; Monitore 2018</small>
+            </div>
+        </div>
+
+        <!-- POP-UP PERFIL -->
+        <asp:Panel ID="pnlAlterarPerfil" DefaultButton="btnOkPerfil" runat="server">
+            <div class="popupMaior" id="perfil">
+                <br />
+                <div class="popup-header">
+                    <h3 class="text-secondary text-uppercase mb-0">PERFIL</h3>
+                    <asp:Button ID="btnFecharPerfil" runat="server" Text="X" OnClick="btnFecharPerfil_Click"
+                        CssClass="btn-fechar" Style="border-color: #ea0e0e; text-transform: uppercase; font-weight: bold; cursor: pointer; font-size: 17px;" />
+                </div>
+                <asp:Literal ID="ltrIcone" runat="server"></asp:Literal>
+                <div class="popup-conteudo">
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img class="img-icones" src="/img/icones/user.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <p class="text-icones">Nome:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                            <asp:TextBox ID="txtNomePerfil" CssClass="form-control" runat="server" Enabled="false"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img class="img-icones" src="/img/icones/sexo.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <p class="text-icones">Sexo:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                            <asp:DropDownList ID="ddlSexoPerfil" CssClass="form-control" Enabled="false" runat="server">
+                                <asp:ListItem Value="F">Feminino</asp:ListItem>
+                                <asp:ListItem Value="M">Masculino</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img class="img-icones" src="/img/icones/data.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <p class="text-icones">Data:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                            <asp:TextBox ID="txtDataPerfilExibicao" Enabled="false" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtDataPerfil" type="date" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img class="img-icones" src="/img/icones/email2.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <p class="text-icones">Email:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                            <asp:TextBox ID="txtEmailPerfil" CssClass="form-control" runat="server" Enabled="false"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img class="img-icones" src="/img/icones/nickname.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <p class="text-icones">Username:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                            <asp:TextBox ID="txtUsernamePerfil" CssClass="form-control" runat="server" Enabled="false"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img class="img-icones" src="/img/icones/cpf.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <p class="text-icones">CPF:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                            <asp:TextBox ID="txtCPFPerfil" CssClass="cpf form-control" runat="server" Enabled="false"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <br />
+                    <input type="button" id="btnAlterarDados" onclick="javascript: alterarDados();" class="btn btn-secondary" value="Alterar Dados" />
+                    <asp:Button ID="btnOkPerfil" runat="server" OnClick="btnOkPerfil_Click"
+                        CssClass="btn btn-success btnEspaco" Text="Ok" Enabled="false" />
+
+                    <br />
+                    <br />
+                    <a id="#alterar" style="color: black;" href="javascript: abrirAlterarSenha();">
+                        <p class="linkExternoLogin">Alterar Senha</p>
+                    </a>
+
+                    <a id="#adquirir" style="color: black;" href="../paginas/comprarPlano.aspx">
+                        <p class="linkExternoLogin">Adquirir Premium</p>
+                    </a>
+                </div>
+            </div>
+        </asp:Panel>
+
+        <!-- POP-UP CONTATO -->
+        <asp:Panel ID="pnlContato" DefaultButton="btnEnviarContato" runat="server">
+            <div class="popup" id="contatoUser" style="min-height: 440px; margin-bottom: 140px;">
+                <div class="popup-header">
+                    <h3 class="text-secondary text-uppercase mb-0" style="margin-top: 20px;">CONTATO</h3>
+                    <a href="javascript: fecharContato();" class="btn-fechar">X</a>
+                </div>
+                <div class="popup-conteudo">
+
+                    <div class="row">
+
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="/img/icones/tema.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <p class="text-icones">Assunto: <a style="color: red; font-weight: bolder;">*</a></p>
+                        </div>
+                    </div>
+
+                    <asp:TextBox ID="txtContato" CssClass="form-control" runat="server"></asp:TextBox>
+                    <br />
+
+                    <div class="row">
+
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="/img/icones/status2.png" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <p class="text-icones">Digite o problema ou dúvida: <a style="color: red; font-weight: bolder;">*</a></p>
+                        </div>
+
+                    </div>
+
+                    <asp:TextBox ID="txtMensagem" TextMode="MultiLine" CssClass="textarea form-control" runat="server"></asp:TextBox>
+                    <br />
+                    <asp:Button ID="btnCancelarContato" href="javascript: fecharContato();" CssClass="btn btn-danger"
+                        runat="server" Text="Cancelar" />
+                    <asp:Button ID="btnEnviarContato" CssClass="btn btn-success btnEspaco" runat="server" Text="Enviar"
+                        OnClick="btnEnviarContato_Click" />
+                </div>
+            </div>
+        </asp:Panel>
+
+        <!-- CONFIRMAÇÃO ALTERAÇÃO PERFIL -->
+
+        <div class="popup" id="confirmacaoPerfil">
+            <div class="popup-conteudo">
+                <h3 class="text-secondary text-uppercase mb-0">MENSAGEM DE CONFIRMAÇÃO</h3>
+                <br />
+                <a href="javascript: fecharConfirmacaoPerfil();" class="btn-fechar">X</a>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                        <img src="/img/icones/descricao.png" class="img-icones2" alt="" width="35" height="35" />
+                    </div>
+
+                    <div class="col-xs-12 col-sm-11 col-md-11 col-lg-11">
+                        <p class="text-icones" style="font-size: 20px;">Os dados estão corretos?</p>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: left;">
+                        <asp:Label ID="lblDadosCadastro" runat="server" Text=""></asp:Label>
+                    </div>
+                </div>
+
+                <br />
+
+                <asp:Button ID="btnNão" href="javascript: fecharConfirmacaoPerfil();" CssClass="btn btn-danger"
+                    runat="server" Text="Não" />
+                <asp:Button ID="btnSim" OnClick="btnSim_Click" CssClass="btn btn-success" runat="server" Text="Sim" />
+
+            </div>
+        </div>
+
+        <!-- POP-UP ALTERAR SENHA -->
+        <asp:Panel ID="pnlAlterarSenha" DefaultButton="btnOk" runat="server">
+            <div class="popup" id="alterarSenha">
+                <div class="popup-conteudo">
+                    <h3 class="text-secondary text-uppercase mb-0">ALTERAÇÃO DE SENHA</h3>
+                    <br />
+                    <a href="javascript: fecharAlterarSenha();" class="btn-fechar">X</a>
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-1">
+                            <img src="/img/icones/senha.png" class="img-icones2" alt="" width="25" height="25" />
+
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-5">
+                            <p class="text-icones">Senha atual: <a style="color: red; font-weight: bolder;">*</a></p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6">
+                            <asp:TextBox ID="txtSenhaAntiga" placeholder="Digite a senha atual" type="password"
+                                CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-1">
+                            <img src="/img/icones/senha2.png" class="img-icones2" alt="" width="25" height="25" />
+
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-5">
+                            <p class="text-icones">Senha nova: <a style="color: red; font-weight: bolder;">*</a></p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6">
+                            <asp:TextBox ID="txtSenhaNova" CssClass="form-control" type="password"
+                                placeholder="Digite a nova senha" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-1">
+                            <img src="/img/icones/senha2.png" class="img-icones2" alt="" width="25" height="25" />
+
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-5">
+                            <p class="text-icones">Repita a senha: <a style="color: red; font-weight: bolder;">*</a></p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6">
+                            <asp:TextBox ID="txtRepitaSenha" CssClass="form-control" type="password"
+                                placeholder="Repita a nova senha" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <b>Senha deve conter:</b>
+                            Letras e números | Um ou mais símbolos | 8 ou + caracteres.
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <a href="javascript: fecharAlterarSenha();" class="btn btn-danger">Cancelar</a>
+                    <asp:Button ID="btnOk" OnClick="btnOk_Click" CssClass="btn btn-success" runat="server" Text="OK" />
+                </div>
+            </div>
+        </asp:Panel>
+    </form>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap-select.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script>
+        $(".ddlSelect").selectpicker();
+
+        $(".scrollGrupo").slimScroll(
+            {
+                height: '350px', color: '#FFF'
+            });
+
+        $(".scrollMembros").slimScroll(
+            {
+                height: '150px', color: '#000'
+            });
+
+        $(".scrollNomeGrupo").slimScroll(
+            {
+                height: '40px', width: '250px', color: '#FFFFFF', textalign: center
+            });
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/freelancer.min.js"></script>
+    <script src="/tinymce/tinymce.min.js"></script>
+
+</body>
+</html>

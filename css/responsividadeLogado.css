@@ -1,0 +1,38 @@
+﻿@media screen and (max-width: 382px) and (min-width: 250px) {
+
+    #home{
+        display: none;
+    }
+
+    #homeMini{
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    #meusGrupos{
+        margin-top:40px;
+    }
+
+    .popupMenor2{
+        width: 245px;
+    }
+}
+
+@media screen and (min-width: 383px) {
+
+    #home{
+        width: 160px;
+        height: 50px;
+        display: block;
+    }
+
+    #homeMini{
+        display: none;
+    }
+
+    #meusGrupos{
+        margin-top:40px;
+    }
+}
+

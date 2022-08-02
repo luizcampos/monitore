@@ -1,0 +1,14 @@
+﻿@media screen and (max-width: 360px) {
+
+    #home{
+        width: 100px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 383px) {
+
+    #meusGrupos{
+        margin-top:50px;
+    }
+}

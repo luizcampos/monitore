@@ -1,0 +1,3474 @@
+﻿.criarGrupo {
+    width: 60px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 644px;
+    top: 0;
+    margin-top: 132px;
+    border-radius: 100px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgCriarGrupo {
+    width: 160px;
+    height: 120px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 724px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 132px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.verPerfil {
+    width: 175px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 844px;
+    top: 0;
+    margin-top: 15px;
+    border-radius: 100px;
+    z-index: 4444;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    border: 6px solid;
+}
+
+.msgVerPerfil {
+    width: 260px;
+    height: 145px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 574px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 35px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.verContato {
+    width: 145px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 994px;
+    top: 0;
+    margin-top: 15px;
+    border-radius: 100px;
+    z-index: 4444;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    border: 6px solid;
+}
+
+.msgVerContato {
+    width: 260px;
+    height: 145px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 704px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 35px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.verLogout {
+    width: 125px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 1114px;
+    top: 0;
+    margin-top: 15px;
+    border-radius: 100px;
+    z-index: 4444;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    border: 6px solid;
+}
+
+.msgVerLogout {
+    width: 260px;
+    height: 90px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 845px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 35px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 460px) and (min-width: 250px) {
+    .espaceTuto {
+        margin-top: 10px;
+    }
+
+    .criarGrupo {
+        width: 160px;
+        height: 60px;
+        margin-left: 100px;
+        top: 0;
+        margin-top: 175px;
+    }
+
+    .msgCriarGrupo {
+        width: 160px;
+        height: 120px;
+        margin-left: 100px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 252px;
+        border-radius: 20px;
+    }
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 80px;
+        border-radius: 100px;
+        z-index: 4444;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 185px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 235px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 200px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 285px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) and (min-width: 460px) {
+    .espaceTuto {
+        margin-top: 10px;
+    }
+
+    .criarGrupo {
+        width: 160px;
+        height: 60px;
+        margin-left: 190px;
+        top: 0;
+        margin-top: 175px;
+        border-radius: 100px;
+    }
+
+    .msgCriarGrupo {
+        width: 160px;
+        height: 120px;
+        margin-left: 190px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 252px;
+        border-radius: 20px;
+    }
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 80px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 185px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 235px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 200px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 285px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 661px) {
+    .espaceTuto {
+        margin-top: 10px;
+    }
+
+    .criarGrupo {
+        width: 160px;
+        height: 60px;
+        margin-left: 300px;
+        top: 0;
+        margin-top: 175px;
+        border-radius: 100px;
+    }
+
+    .msgCriarGrupo {
+        width: 160px;
+        height: 120px;
+        margin-left: 300px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 252px;
+        border-radius: 20px;
+    }
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 45px;
+        top: 0;
+        margin-top: 80px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 155px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 185px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 45px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 155px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 235px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 45px;
+        top: 0;
+        margin-top: 200px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 155px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 285px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 885px) and (min-width: 768px) {
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 80px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 185px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 235px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 2px;
+        top: 0;
+        margin-top: 200px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 74px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 285px;
+        border-radius: 20px;
+    }
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 900px) {
+    .espaceTuto {
+        margin-top: 10px;
+    }
+
+    .criarGrupo {
+        width: 160px;
+        height: 60px;
+        margin-left: 420px;
+        top: 0;
+        margin-top: 175px;
+        border-radius: 100px;
+    }
+
+    .msgCriarGrupo {
+        width: 160px;
+        height: 120px;
+        margin-left: 418px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 252px;
+        border-radius: 20px;
+    }
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 65px;
+        top: 0;
+        margin-top: 80px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 120px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 185px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 65px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 120px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 235px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 65px;
+        top: 0;
+        margin-top: 200px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 120px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 285px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1052px) and (min-width: 992px) {
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 575px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 494px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 125px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 725px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 634px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 125px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 850px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 670px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 105px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1125px) and (min-width: 1052px) {
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 610px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 520px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 125px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 760px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 664px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 125px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 885px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 670px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 105px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1125px) {
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 660px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 540px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 125px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 800px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 684px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 125px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 925px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 730px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 105px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .espaceTuto {
+        margin-top: 10px;
+    }
+
+    .criarGrupo {
+        width: 160px;
+        height: 60px;
+        margin-left: 460px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+    }
+
+    .msgCriarGrupo {
+        width: 160px;
+        height: 120px;
+        margin-left: 458px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 212px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1290px) and (min-width: 1200px) {
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 800px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 514px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 55px;
+        border-radius: 20px;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        margin-left: 940px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 670px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 45px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 1050px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 784px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 45px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1290px) {
+
+    .verPerfil {
+        width: 175px;
+        height: 80px;
+        margin-left: 825px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerPerfil {
+        width: 260px;
+        height: 135px;
+        margin-left: 530px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 55px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .verContato {
+        width: 145px;
+        height: 80px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 980px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerContato {
+        width: 260px;
+        height: 115px;
+        margin-left: 700px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 45px;
+        border-radius: 20px;
+    }
+
+    .verLogout {
+        width: 125px;
+        height: 70px;
+        margin-left: 1100px;
+        top: 0;
+        margin-top: 15px;
+        border-radius: 100px;
+        border: 6px solid;
+    }
+
+    .msgVerLogout {
+        width: 260px;
+        height: 90px;
+        margin-left: 824px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 45px;
+        border-radius: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1350px) and (min-width: 1200px) {
+    .espaceTuto {
+        margin-top: 10px;
+    }
+
+    .criarGrupo {
+        width: 160px;
+        height: 60px;
+        margin-left: 570px;
+        top: 0;
+        margin-top: 135px;
+        border-radius: 100px;
+    }
+
+    .msgCriarGrupo {
+        width: 160px;
+        height: 120px;
+        margin-left: 568px;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        top: 0;
+        margin-top: 212px;
+        border-radius: 20px;
+    }
+}
+
+
+/*###################################  TUTORIAL DO GRUPO #######################################*/
+.addMembros {
+    width: 165px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 446px;
+    top: 0;
+    margin-top: 220px;
+    border-radius: 10px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgAddMembros {
+    width: 220px;
+    height: 140px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 204px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 252px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.remMembros {
+    width: 165px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 610px;
+    top: 0;
+    margin-top: 220px;
+    border-radius: 10px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgRemMembros {
+    width: 220px;
+    height: 140px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 364px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 252px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.criarTarefa {
+    width: 112px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 770px;
+    top: 0;
+    margin-top: 220px;
+    border-radius: 10px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgCriarTarefa {
+    width: 220px;
+    height: 120px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 524px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 252px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.progresso {
+    width: 112px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 340px;
+    top: 0;
+    margin-top: 220px;
+    border-radius: 10px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgProgresso {
+    width: 220px;
+    height: 120px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 104px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 252px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.encerrar {
+    width: 140px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 1095px;
+    top: 0;
+    margin-top: 816px;
+    border-radius: 10px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgEncerrar {
+    width: 220px;
+    height: 140px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 854px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 835px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+.irHome {
+    width: 60px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 10px;
+    top: 0;
+    margin-top: 120px;
+    border-radius: 10px;
+    z-index: 5555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.msgIrHome {
+    width: 220px;
+    height: 140px;
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 104px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    margin-top: 92px;
+    border-radius: 20px;
+    z-index: 5555;
+    background-color: #FFF;
+}
+
+@media screen and (max-width: 307px) and (min-width: 250px) {
+    .addMembros {
+        width: 190px;
+        height: 60px;
+        margin-left: 50px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        margin-left: 30px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 390px;
+        border-radius: 20px;
+    }
+
+    .remMembros {
+        width: 185px;
+        height: 60px;
+        margin-left: 50px;
+        top: 0;
+        margin-top: 380px;
+        border-radius: 10px;
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 450px;
+        border-radius: 20px;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        margin-left: 25px;
+        top: 0;
+        margin-top: 435px;
+        border-radius: 10px;
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 292px;
+        border-radius: 20px;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        margin-left: 90px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        margin-left: 141px;
+        top: 0;
+        margin-top: 1233px;
+        border-radius: 10px;
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        margin-left: 60px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 1080px;
+        border-radius: 20px;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 314px) and (min-width: 307px) {
+    .addMembros {
+        width: 170px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 115px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 30px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 165px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 420px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 175px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 402px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 148px;
+        top: 0;
+        margin-top: 1180px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 60px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 1010px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 437px) and (min-width: 314px) {
+    .addMembros {
+        width: 170px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 175px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 70px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 165px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 72px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 420px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 235px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 402px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 70px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 268px;
+        top: 0;
+        margin-top: 1160px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 60px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 1000px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 469px) and (min-width: 437px) {
+    .addMembros {
+        width: 170px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 193px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 80px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 165px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 28px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 400px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 188px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 402px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 90px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 300px;
+        top: 0;
+        margin-top: 1105px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 60px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 960px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+
+@media screen and (max-width: 577px) and (min-width: 469px) {
+    .addMembros {
+        width: 170px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 165px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 60px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 165px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 330px;
+        top: 0;
+        margin-top: 272px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 94px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 330px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 160px;
+        top: 0;
+        margin-top: 325px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 34px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 402px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 60px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 400px;
+        top: 0;
+        margin-top: 1105px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 170px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 970px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 699px) and (min-width: 578px) {
+    .addMembros {
+        width: 170px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 170px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 240px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 340px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 165px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 335px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 144px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 497px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 384px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 70px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 458px;
+        top: 0;
+        margin-top: 1105px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 270px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 940px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 700px) {
+    .addMembros {
+        width: 170px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 144px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 150px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 165px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 310px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 234px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 116px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 468px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 384px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 350px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 112px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 45px;
+        top: 0;
+        margin-top: 270px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 345px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 140px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 485px;
+        top: 0;
+        margin-top: 1050px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 320px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 880px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 170px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 240px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 895px) and (min-width: 769px) {
+    .addMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 145px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 150px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 310px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 234px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 468px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 444px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 45px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 315px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 200px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 590px;
+        top: 0;
+        margin-top: 787px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 340px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 640px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 120px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 180px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1016px) and (min-width: 895px) {
+    .addMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 205px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 150px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 370px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 234px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 530px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 444px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 110px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 35px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 315px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 200px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 652px;
+        top: 0;
+        margin-top: 787px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 440px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 640px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 120px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 180px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1125px) and (min-width: 992px) {
+
+    .encerrar {
+        width: 200px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 822px;
+        top: 0;
+        margin-top: 787px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 640px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 640px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1130px) and (min-width: 1016px) {
+    .addMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 270px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 190px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 435px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 324px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 595px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 484px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 165px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 95px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 315px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 120px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 180px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1260px) and (min-width: 1130px) {
+    .addMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 330px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 230px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 495px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 384px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 655px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 534px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 230px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 135px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 315px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 120px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 180px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1125px) {
+    .encerrar {
+        width: 200px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 862px;
+        top: 0;
+        margin-top: 787px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 730px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 640px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1200px) {
+    .encerrar {
+        width: 200px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 992px;
+        top: 0;
+        margin-top: 787px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 740px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 640px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1260px) {
+    .addMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 390px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgAddMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 230px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .remMembros {
+        width: 230px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 535px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgRemMembros {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 384px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .criarTarefa {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 685px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgCriarTarefa {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 534px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 300px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .progresso {
+        width: 180px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 260px;
+        top: 0;
+        margin-top: 220px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgProgresso {
+        width: 220px;
+        height: 120px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 135px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 315px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .irHome {
+        width: 60px;
+        height: 40px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        top: 0;
+        margin-top: 120px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgIrHome {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 54px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 180px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+
+    .encerrar {
+        width: 200px;
+        height: 60px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 1022px;
+        top: 0;
+        margin-top: 787px;
+        border-radius: 10px;
+        z-index: 5555;
+        -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    }
+
+    .msgEncerrar {
+        width: 220px;
+        height: 140px;
+        display: none;
+        position: absolute;
+        float: left;
+        margin-left: 800px;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        top: 0;
+        margin-top: 640px;
+        border-radius: 20px;
+        z-index: 5555;
+        background-color: #FFF;
+    }
+}

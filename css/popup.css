@@ -1,0 +1,255 @@
+﻿
+.popup {
+    overflow-y: auto;
+    width: 460px;
+    min-height: 420px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 2555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 30px;
+    box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.popupMaior {
+    overflow-y: auto;
+    width: 600px;
+    min-height: 230px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 2555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.popupMaiorTermos {
+    overflow-y: auto;
+    width: 800px;
+    min-height: 220px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 2555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.popupMenor {
+    overflow-y: auto;
+    width: 460px;
+    min-height: 120px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 2555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 140px;
+    box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.popupMenor2 {
+    overflow-y: auto;
+    max-width: 460px;
+    min-height: 180px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 2555;
+    -moz-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    box-shadow: 0 0 3rem 1000rem rgba(0,0,0,.7);
+}
+
+.popup-header {
+    height: 50px;
+    min-width: 200px;
+    font-size: 4.75em;
+}
+
+.popup-conteudo {
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.btn-fechar {
+    float: left;
+    background-color: #ea0e0e;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    height: 32px;
+    width: 34px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFF;
+    padding-top: 1px;
+    border-radius: 5px;
+}
+
+    .btn-fechar:hover {
+        color: #FFF;
+    }
+
+@media screen and (max-width: 767px) {
+    .popup {
+        padding: 10px 5%;
+        max-width: 86%;
+        margin-top: 20px;
+        min-height: 520px;
+    }
+
+    .popupMaior {
+        padding: 10px 5%;
+        max-width: 86%;
+        margin-top: 20px;
+    }
+
+    .popupMaiorTermos {
+        padding: 10px 5%;
+        max-width: 86%;
+        margin-top: 20px;
+    }
+
+    .popupMenor {
+        padding: 10px 5%;
+        max-width: 86%;
+        margin-top: 20px;
+        min-height: 320px;
+    }
+
+    .btnEspaco {
+        margin-top: 5px;
+    }
+}
+
+.abas {
+    display: inline;
+}
+
+abas li {
+    float: left;
+}
+
+.aba {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding-top: 5px;
+    background: #ebe8e8;
+    border-color: #ebe8e8;
+}
+
+.ativa {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding-top: 5px;
+    background: #FFFF00;
+    cursor:pointer;
+}
+
+.ativa span, .selecionado span {
+    color: #000;
+}
+
+.selecionado {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #FFFF00;
+}
+
+.popupMaior #header {
+    width: 100%;
+    padding: 10px;
+    height: 10px;
+    margin-top: 20px;
+}
+
+.popupMaior .content {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.popupMaior #content {
+    background: #FFF;
+}
+
+#comentarios{
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#comentarios2{
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#arquivos{
+    display: none;
+    top: 0;
+}
+
+.textoCom{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+}
+
+.comentar{
+    margin-top: 10px;
+}
+
+.imgLixeiraCom{
+    margin-bottom: 10px;
+}

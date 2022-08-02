@@ -1,0 +1,339 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Monitore | Monitorar para avaliar</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sistema web para monitoramento do andamento de grupos acadêmicos" />
+    <meta name="author" content="Monitore" />
+    <link rel="icon" href="img/logotipo/icone.png" type="image/x-icon" />
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/css/freelancer.min.css" rel="stylesheet" />
+    <link href="css/responsividadePublico.css" rel="stylesheet" />
+    <link href="/css/popup.css" rel="stylesheet" />
+    <script src="/js/popup.js"></script>
+
+    <script src="/sweetalert/sweetalert.min.js"></script>
+    <script src="/jquery/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+
+        /* LOGIN */
+
+        function abrirLogin() {
+            document.getElementById('login').style.display = 'block';
+        }
+        function fecharLogin() {
+            document.getElementById('login').style.display = 'none';
+        }
+
+        /* ESQUECEU A SENHA */
+
+        function abrirEsqueceuSenha() {
+            document.getElementById('esqueceuSenha').style.display = 'block';
+        }
+        function fecharEsqueceuSenha() {
+            document.getElementById('esqueceuSenha').style.display = 'none';
+        }
+
+        $(document).ready(function () {
+
+            jQuery("#subirTopo").hide();
+
+            jQuery('a#subirTopo').click(function () {
+                jQuery('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 400) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+
+        });
+
+
+        /* MUDAR COR BOTÃI VOLTAR AO TOPO */
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 2065) {
+                document.getElementById('subirTopo').style.backgroundColor = '#FFFF00';
+                document.getElementById('subirTopo').style.color = '#000000';
+            }
+        });
+
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() < 2065) {
+                document.getElementById('subirTopo').style.backgroundColor = '#000000';
+                document.getElementById('subirTopo').style.color = '#FFFFFF';
+            }
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top">
+    <a id="subirTopo" style="background-color: #000; color: #FFF;">subir
+    </a>
+
+    <form id="form1" runat="server" defaultbutton="btnEntrar">
+
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+            <div class="container">
+
+                <a class="navbar-brand js-scroll-trigger" href="index.aspx">
+                    <img src="/img/logotipo/logotipo2.png" id="home" width="180" height="50" alt="Home" />
+                </a>
+
+                <button class="navbar-toggler navbar-toggler-right text-uppercase btn rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                    style='background-color: #FFFF00; color: #000;'>
+                    Menu
+         
+                <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href='<%=ResolveUrl("paginas/index.aspx#sobre") %>'>Sobre</a>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href='<%=ResolveUrl("paginas/index.aspx#planos") %>'>Planos</a>
+                        </li>
+
+                        <%--<li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contato">Contato</a>
+                        </li>--%>
+
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link  py-3 px-0 px-lg-3 " href="/paginas/cadastro.aspx">Registre-se</a>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="javascript: abrirLogin()">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CONTEÚDO DAS PÁGINAS FILHAS -->
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- RODAPÉ -->
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+
+                    <!-- LINKS -->
+
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Links</h4>
+                        <p>
+                            <a class="lead mb-0" href="/paginas/ajuda.aspx">Ajuda</a>
+                        </p>
+
+                        <br />
+
+                        <a href='https://app.umbler.com/u/ne16l76k'>
+                            <img src='https://static.umbler.com/brand/umbler-badges/umbler-badge-hostedby-light-bg.png'
+                                width='40%' alt='Hosted by Umbler'>
+                        </a>
+                    </div>
+
+                    <!-- REDES SOCIAIS -->
+
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Redes sociais</h4>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/monitoreweb/">
+                                    <i class="fa fa-fw fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/monitoreweb/">
+                                    <i class="fa fa-fw fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/monitoreweb">
+                                    <i class="fa fa-fw fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SOBRE NÓS -->
+
+                    <div class="col-md-4">
+                        <h4 class="text-uppercase mb-4">Sobre nós</h4>
+                        <p class="lead mb-0">
+                            Sistema web produzido por alunos da FATEC Guaratinguetá.
+                        </p>
+                        <br />
+                        <h6>Douglas Kurotaki </h6>
+                        <h6>Luiz Fellipe</h6>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>Copyright &copy; Monitore 2018</small>
+            </div>
+        </div>
+
+        <!-- LOGIN -->
+        <asp:Panel ID="pnlLogin" DefaultButton="btnEntrar" runat="server">
+            <div class="popup" id="login">
+                <div class="popup-conteudo">
+                    <h3 class="text-secondary text-uppercase mb-0">LOGIN</h3>
+                    <br />
+                    <a href="javascript: fecharLogin();" class="btn-fechar">X</a>
+
+                    <div class="row">
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img src="/img/icones/nickname.png" class="img-icones2" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3">
+                            <p class="text-icones">Username:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-7">
+                            <asp:TextBox ID="txtUsername" CssClass="form-control" placeholder="Ex: luizinho" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                            <img src="/img/icones/senha.png" class="img-icones2" alt="" width="30" height="30" />
+                        </div>
+
+                        <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3">
+                            <p class="text-icones">Senha:</p>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-7">
+                            <asp:TextBox ID="txtSenha" type="password"
+                                CssClass="form-control" placeholder="Ex: *******" runat="server"
+                                autocomplete="off"></asp:TextBox>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <asp:Button ID="btnCancelarLogin" href="javascript: fecharLogin();" CssClass="btn btn-danger"
+                        runat="server" Text="Cancelar" />
+                    <asp:Button ID="btnEntrar" OnClick="btnEntrar_Click" CssClass="btn btn-success" runat="server" Text="Entrar" />
+
+                    <br />
+                    <br />
+
+                    <p>
+                        <asp:LinkButton ID="lbEsqueceu" OnClick="lbEsqueceu_Click" runat="server" CssClass="linkExternoLogin">Esqueceu a senha?</asp:LinkButton>
+                        <%--<a class="linkExternoLogin" href="javascript: abrirEsqueceuSenha();">Esqueceu a senha? </a>--%>
+                        <br />
+                        <a class="linkExternoLogin" href="/paginas/cadastro.aspx">Registre-se</a>
+                    </p>
+                </div>
+            </div>
+        </asp:Panel>
+
+        <!-- ESQUECEU A SENHA? -->
+
+        <div class="popup" id="esqueceuSenha" style="z-index: 5000;">
+            <br />
+            <br />
+            <div class="popup-header">
+                <h3 class="text-secondary text-uppercase mb-0">ESQUECEU A SENHA?</h3>
+                <a href="javascript: fecharEsqueceuSenha();" class="btn-fechar">X</a>
+            </div>
+            <div class="popup-conteudo">
+
+                <div class="row">
+
+                    <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                        <img src="/img/icones/pergunta.png" alt="" width="30" height="30" />
+                    </div>
+
+                    <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+                        <p class="text-icones">Pergunta:</p>
+                    </div>
+
+                    <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+                        <asp:Label ID="lblPerguntas" Enabled="false" runat="server"></asp:Label>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row">
+
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="/img/icones/resposta.png" class="img-icones2" alt="" width="30" height="30" />
+                    </div>
+
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                        <p class="text-icones">Resposta*:</p>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-7">
+                        <asp:TextBox ID="txtSenhaRecuperar" CssClass="form-control" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+
+                <asp:Literal ID="ltrCodigo" Visible="false" runat="server"></asp:Literal>
+                <br />
+
+                <a id="btnCancelarEsqueceuSenha" href="javascript: fecharEsqueceuSenha();" class="btn btn-danger">Cancelar</a>
+                <asp:Button ID="btnEnviarEsqueceuSenha" CssClass="btn btn-success btnEspaco" runat="server" Text="Enviar"
+                    OnClick="btnEnviarEsqueceuSenha_Click" />
+            </div>
+        </div>
+    </form>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        })
+
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/freelancer.min.js"></script>
+
+</body>
+</html>
